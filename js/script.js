@@ -8,7 +8,7 @@ import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
-import initAnimacaoScroll from "./modules/scroll-animacao.js";
+import ScrollAnima from "./modules/scroll-anima.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 
 // Scroll
@@ -38,10 +38,13 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
+// Scroll Anima
+const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
+scrollAnima.init();
+
 // Fetch Animais
 fetchAnimais("../../Animaisapi.json", ".numeros-grid");
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
 initFetchBitcoin();
-initAnimacaoScroll();
