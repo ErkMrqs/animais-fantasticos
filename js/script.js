@@ -37,8 +37,10 @@ modal.init();
 // Tooltip
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
+
 // Scroll Anima
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
+scrollAnima.init();
 
 // Fetch Animais
 fetchAnimais("../../Animaisapi.json", ".numeros-grid");
